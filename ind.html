@@ -1,0 +1,41 @@
+<html>
+<head>
+
+    <title>Index</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!--Add game.js and jquery script-->
+    <script src="game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--Add component name in scene tag-->
+    <a-scene start-game>
+
+        <a-entity position="0 1.8 0">
+            <a-camera kinematic-body="radius: 1.8" wasd-controls="acceleration: 300" ></a-camera>
+        </a-entity>
+
+        <a-sky color="#36454F"></a-sky>        
+        <a-plane color="#304529" rotation="-90 0 0" width="150" height="150"></a-plane>
+
+        <a-plane static-body color="green" width="30" height="30" rotation="90 0 0"></a-plane>
+        <a-sphere dynamic-body color="red" radius="0.5" position="0 5 -5"></a-sphere>
+
+        <a-plane color="black" position="0 2 -5" width="3" >
+            <a-text value="Some text here" position="-1 0 0"></a-text>
+        </a-plane>
+
+
+
+
+
+
+
+
+    </a-scene>
+</body>
+</html>

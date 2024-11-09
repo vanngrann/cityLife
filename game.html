@@ -1,0 +1,27 @@
+<html>
+<head>
+
+    <title>Game</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+  
+
+</head>
+<body>
+    <a-scene physics="debug: true; friction: 0.2; restitution: 0.8; gravity: -9.8;">
+
+        <a-entity position="0 1.8 0">
+        <a-camera kinematic-body></a-camera>
+    </a-entity>
+
+       
+        <a-plane static-body color="gray" rotation="-90 0 0" width="50" height="50"></a-plane>
+        <a-box dynamic-body width="2" height="2" depth="2" color="red" position="0 8 -10"></a-box>
+        <a-box dynamic-body width="2" height="2" depth="2" color="blue" position="1 4 -10"></a-box>
+
+    </a-scene>
+</body>
+</html>
